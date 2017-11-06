@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+    <div class="box">
+        <header>
+            <h1>备忘录</h1>
+            <button type="button" class="btn">编辑</button>
+            <button type="button" class="cancel">取消</button>
+        </header>
+        <main class="main-box">
+            <ul></ul>
+        </main>
+        <footer>
+            <h2>无备忘录</h2>
+            <button type="button" class="edt"></button>
+            <span class="delete">删除</span>
+        </footer>
+    </div>
+<!--编辑页-->
+    <div class="edit">
+        <header>
+            <div>
+                <span class="return">&lt;</span>
+                <span>备忘录</span>
+            </div>
+            <button type="button" class="Preservation">保存</button>
+        </header>
+        <main>
+            <textarea spellcheck="false"></textarea>
+        </main>
+        <footer>
+            <button type="button"></button>
+        </footer>
+    </div>
+<script type="text/javascript" src="plugin/jquery.js"></script>
+<script type="text/javascript" src="javascripts/index.js"></script>
+</body>
+</html>

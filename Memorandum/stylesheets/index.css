@@ -1,0 +1,217 @@
+@charset "utf-8";
+body,ul,li,div,header,h1,p{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    display: block;
+    font: 16px "微软雅黑";
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.ckd{
+    background-color: #e9b114;
+    border-color: #e9b114;
+}
+.color{
+    color:#e9b114 ;
+}
+.box{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) #fff;;
+}
+.box>header{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+header>h1{
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 40px;
+}
+header>button{
+    color: #ddd;
+    text-shadow: 0 -1px 0 #aaa;
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    padding: 0 12px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+}
+main{
+    box-sizing: border-box;
+    height: calc(100% - 82px);
+    padding-bottom: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+    overflow-y: auto;
+}
+li{
+    padding: 14px 0 6px;
+    line-height: 24px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+li>p{
+    box-sizing: border-box;
+    width: 100%;
+    /*padding-left: 36px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    line-height: 24px;
+}
+/*li>.main{*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 12px;*/
+/*}*/
+li>div{
+    position: absolute;
+    width: 0;
+    height: 48px;
+    overflow: hidden;
+    left: 0;
+    top: 12px;
+}
+div>i{
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    line-height: 16px;
+    color: #fff;
+    left: 0;
+    top: 15px;
+    cursor: pointer;
+}
+
+footer{
+    border-top: 1px solid #ddd;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+footer>h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+footer>button{
+    width: 50px;
+    background: url(../images/edit.png) no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: 0;
+    background-size: 44%;
+    color: #e9b114;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>.delete{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    color: #e9b114;
+    cursor: pointer;
+    font-size: 1rem;
+    display: none;
+    transition: 0.2s linear;
+}
+/*编辑页*/
+.edit{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left:103%;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    z-index: 1;
+    background: url(../images/bg.jpg) #fff;
+    transition: 0.2s linear;
+}
+.edit>header{
+    text-align: left;
+    border-bottom: none;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    position: relative;
+}
+.edit>main{
+    padding-bottom: 0;
+}
+.edit>footer{
+    border-top: none;
+}
+.edit>header>div{
+    box-sizing: border-box;
+    width: 97px;
+    padding: 0 12px;
+}
+.edit>header>div>.return{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-size: cover;
+    font: normal bold 1.2rem Consolas,Monaco;
+}
+.edit>header>div>span{
+    color: #e9b114;
+    vertical-align: middle;
+}
+.edit>main>textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 99%;
+    background-color: transparent;
+     border: none;
+    padding: 8px;
+    resize: none;
+    overflow-y: auto;
+    font: lighter 16px/1.6 "微软雅黑";
+    outline: none;
+}
+
+.cancel{
+    color: #e9b114 ;
+    display: none;
+    transition: 0.2s linear;
+}
